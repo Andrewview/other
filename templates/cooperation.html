@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/new_workers.css') }}">
+	<title>Сайт реєстрації</title>
+{% endblock %}
+
+{% block body %}
+
+
+
+<div class="greating">
+    <div class="greating_txt">
+        <p>Привіт, швидше всього ти інтерисуєшся роботою у нас!</p>
+        <p>Робота в Glovo, це повноцінна оплачуванна робота, яка дасть тобі багато досвіду, якщо заінтересований заповнюй анкету яка подана нище</p>
+    </div>
+    <div class="greating_image">
+        <img src="static/images/glv_im.png" alt="">
+    </div>
+</div>
+<div class="container">
+    <form action="process_form.php" method="post">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="resume">Розкажіть про себе:</label>
+        <textarea id="resume" name="resume" required></textarea>
+
+        <input type="submit" value="Відправити">
+    </form>
+</div>
+{% endblock %}

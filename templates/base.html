@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/stl.css') }}">
+
+	{% block head %}
+	{% endblock %}
+
+</head>
+<body>
+
+	<header>
+		<div class="head">
+			<a href="/" class="navigate">Головна сторінка</a>
+			<a href="/new1" class="navigate">Набір в працівників</a>
+			<a href="/new2" class="navigate">Більше про Glovo</a>
+			<a href="/registration" class="navigate">Реєстрація</a>
+		</div>
+	</header>
+
+
+	{% block body %}
+	{% endblock %}
+

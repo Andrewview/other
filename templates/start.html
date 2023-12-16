@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+	<title>Це заголовок основної сторінки</title>
+{% endblock %}
+
+{% block body %}
+
+    <header>
+        <div class="title1">
+            
+            
+            <div class="txt1"><h1>Glovo!</h1></div>
+            <button class="button-68" role="button">Розпочнемо</button>
+                
+    
+        </div>
+    </header>
+    <br><br><br>
+    <div class="bvfd">
+        <div class="img1">
+            <img src="static/images/glovo.png" alt="">
+        </div>
+
+        <div class="txt2">
+
+            <div class="item1">
+                <h1>Доставка їжі та багато чого іншого</h1>
+            </div>
+
+            <div class="item2">
+                <p>Продукти, магазини, аптеки, що завгодно!</p>
+            </div>
+        
+            <div class="item3">
+                <input placeholder="Введіть свою адресу" type="text" name="text" class="input">
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

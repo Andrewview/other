@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/register.css') }}">
+    <title>Реєстрація</title>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="start">
+    <div class="form-box">
+        <div class="button-box">
+            <button type="button" class="toggle-btn">Log In</button>
+            <button type="button" class="toggle-btn">Register</button>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
