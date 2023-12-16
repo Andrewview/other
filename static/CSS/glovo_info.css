@@ -14,6 +14,9 @@ section {
     height: 75vh;
     display: grid;
     place-items: center;
+    overflow: hidden;
+    max-width: 100%;
+
 }
 .no-parallax {
     background: #111111;
@@ -35,7 +38,10 @@ section {
 }
 
 .bg::after {
-    background-image: url('static/images/eveningbeach.png');
+    background: url('/static/images/eveningbeach.png');
     background-size: cover;
-    
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }

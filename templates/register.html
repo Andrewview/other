@@ -10,11 +10,25 @@
 <div class="start">
     <div class="form-box">
         <div class="button-box">
-            <button type="button" class="toggle-btn">Log In</button>
-            <button type="button" class="toggle-btn">Register</button>
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
 
         </div>
+        <div class="social-icons">
+            <img src="/static/images/fb.png">
+            <img src="/static/images/tw.png">
+            <img src="/static/images/gp.png">
+            
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box"> <span>Remember me</span>
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
     </div>
-</div>
+</div> 
+
 
 {% endblock %}
